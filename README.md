@@ -122,7 +122,7 @@ vagrant.box                                     100%[===========================
 
 Стартую ВМ:
 
-`vagrant up`
+`adminkonstantin@2OSUbuntu:~/Ansible$ vagrant up`
 
 Результат:
 
