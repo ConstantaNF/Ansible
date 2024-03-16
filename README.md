@@ -41,6 +41,7 @@
 Смотрим содержимое Vagrantfile, предварительно перейдя в целевой каталог:
 
 `adminkonstantin@2OSUbuntu:~$ cd Ansible/`
+
 `adminkonstantin@2OSUbuntu:~/Ansible$ nano Vagrantfile`
 
 Результат:
