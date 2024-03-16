@@ -16,7 +16,7 @@
 ### **Установка Ansible** ###
 
 Так как README.md пишу на этапе, когда домашнее задание уже выполнено, в выводе команд уже присутствуют заранее подготовленный каталог `/home/adminkonstantin/Ansible/`, а также путь до файла ansible.cfg `/home/adminkonstantin/Ansible/ansible.cfg`.
-Установку произвожу по инструкции из оффициальной документации <https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu>
+Установку произвожу по инструкции из оффициальной документации <https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu>.
 Проверяю версию установленного ПО:
 
 `adminkonstantin@2OSUbuntu:~/Ansible$ ansible --version`
@@ -35,9 +35,9 @@
 
 ### **Подготовка окружения** ###
 
-Для развёртывания управляемой ВМ посредством Vagrant использую Vagrantfile из методички <https://drive.google.com/file/d/17MEtg20TFSjKil6ih7PvPez7jmCvo6fb/view?usp=share_link>
-Данный Vagrantfile кладу в заранее подготовленный каталог Ansible `/home/adminkonstantin/Ansible/`
-Так как VPN не использую, ,буду качать необходимый box вручную из Vagrant Cloud <https://app.vagrantup.com/boxes/search>
+Для развёртывания управляемой ВМ посредством Vagrant использую Vagrantfile из методички <https://drive.google.com/file/d/17MEtg20TFSjKil6ih7PvPez7jmCvo6fb/view?usp=share_link>.
+Данный Vagrantfile кладу в заранее подготовленный каталог Ansible `/home/adminkonstantin/Ansible/`.
+Так как VPN не использую, ,буду качать необходимый box вручную из Vagrant Cloud <https://app.vagrantup.com/boxes/search>.
 Смотрим содержимое Vagrantfile, предварительно перейдя в целевой каталог:
 
 `adminkonstantin@2OSUbuntu:~$ cd Ansible/`
