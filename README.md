@@ -178,8 +178,8 @@ vagrant.box                                     100%[===========================
 
 Результат:
 
-`<h1>Welcome to nginx!</h1>
-<p>If you see this page, the nginx web server is successfully installed and
+`Welcome to nginx!
+If you see this page, the nginx web server is successfully installed and
 working.`
 
 Задаание выполено. 
