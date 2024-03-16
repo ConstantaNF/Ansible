@@ -37,7 +37,7 @@
 
 Для развёртывания управляемой ВМ посредством Vagrant использую Vagrantfile из методички <https://drive.google.com/file/d/17MEtg20TFSjKil6ih7PvPez7jmCvo6fb/view?usp=share_link>.
 Данный Vagrantfile кладу в заранее подготовленный каталог Ansible `/home/adminkonstantin/Ansible/`.
-Так как VPN не использую, ,буду качать необходимый box вручную из Vagrant Cloud <https://app.vagrantup.com/boxes/search>.
+Так как VPN не использую, буду качать необходимый box вручную из Vagrant Cloud <https://app.vagrantup.com/boxes/search>.
 Смотрим содержимое Vagrantfile, предварительно перейдя в целевой каталог:
 
 `adminkonstantin@2OSUbuntu:~$ cd Ansible/`
@@ -45,9 +45,7 @@
 
 Результат:
 
-`# -*- mode: ruby -*-
-# vim: set ft=ruby :
-MACHINES = {
+`MACHINES = {
   :nginx => {
         :box_name => "generic/ubuntu2204",
         :vm_name => "nginx",
@@ -116,7 +114,7 @@ vagrant.box                                     100%[===========================
 
 Результат:
 
-==> box: Box file was not detected as metadata. Adding it directly...
+`==> box: Box file was not detected as metadata. Adding it directly...
 ==> box: Adding box 'generic/ubuntu2204' (v0) for provider: 
     box: Unpacking necessary files from: file:///home/adminkonstantin/Ansible/vagrant.box
 ==> box: Successfully added box 'generic/ubuntu2204' (v0) for ''!`
@@ -156,7 +154,7 @@ vagrant.box                                     100%[===========================
     nginx: VirtualBox Version: 7.0
 ==> nginx: Setting hostname...
 ==> nginx: Configuring and enabling network interfaces...
-==> nginx: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> nginx: Machine already provisioned. Run 'vagrant provision' or use the '--provision'
 ==> nginx: flag to force provisioning. Provisioners marked to run always will still run.`
 
 Проверяю доступность созданной ВМ по ssh:
@@ -180,7 +178,7 @@ vagrant.box                                     100%[===========================
 
 Результат:
 
-`<!DOCTYPE html>
+`"<!DOCTYPE html>
 <html>
 <head>
 <title>Welcome to nginx!</title>
@@ -202,7 +200,7 @@ Commercial support is available at
 <a href="http://nginx.com/">nginx.com</a>.</p>
 <p><em>Thank you for using nginx.</em></p>
 </body>
-</html>`
+</html>"`
 
 Задаание выполено. 
 Для проверки создаю новый репозиторий github <https://github.com/ConstantaNF/Ansible> по инструкции из методички и отправляю туда нужные файлы.
