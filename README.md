@@ -203,3 +203,66 @@ Commercial support is available at
 <p><em>Thank you for using nginx.</em></p>
 </body>
 </html>`
+
+Задаание выполено. 
+Для проверки создаю новый репозиторий github <https://github.com/ConstantaNF/Ansible> по инструкции из методички и отправляю туда нужные файлы.
+Добавляем в каталог систему контроля версий git:
+
+`adminkonstantin@2OSUbuntu:~/Ansible$ git init`
+
+Результат:
+
+`подсказка: Using 'master' as the name for the initial branch. This default branch name
+подсказка: is subject to change. To configure the initial branch name to use in all
+подсказка: of your new repositories, which will suppress this warning, call:
+подсказка: 
+подсказка: 	git config --global init.defaultBranch <name>
+подсказка: 
+подсказка: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+подсказка: 'development'. The just-created branch can be renamed via this command:
+подсказка: 
+подсказка: 	git branch -m <name>
+Инициализирован пустой репозиторий Git в /home/adminkonstantin/Ansible/.git/`
+
+Добавляем в неё нужные файлы:
+
+`adminkonstantin@2OSUbuntu:~/Ansible$ git add nginx.yml Vagrantfile README.md`
+
+Фиксируем изменения:
+
+`adminkonstantin@2OSUbuntu:~/Ansible$ git commit -m "first commit"`
+
+Результат:
+
+`[master (корневой коммит) d84982e] first commit
+ 3 files changed, 292 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 Vagrantfile
+ create mode 100644 nginx.yml`
+
+ Делаю эту ветку репозитория главной:
+
+ `adminkonstantin@2OSUbuntu:~/Ansible$ git branch -M main`
+
+ Добавляю информацию о созданном репозитории в GitHub:
+
+ `git remote add origin https://github.com/ConstantaNF/Ansible.git`
+
+ Отправляю файлы в удалённый репозиторий GitHub:
+
+ `adminkonstantin@2OSUbuntu:~/Ansible$ git push -u origin main`
+
+ Результат:
+
+ `Username for 'https://github.com': ConstantaNF
+Password for 'https://ConstantaNF@github.com': 
+Перечисление объектов: 5, готово.
+Подсчет объектов: 100% (5/5), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (5/5), готово.
+Запись объектов: 100% (5/5), 5.85 КиБ | 1.46 МиБ/с, готово.
+Всего 5 (изменений 0), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+To https://github.com/ConstantaNF/Ansible.git
+ * [new branch]      main -> main
+Ветка «main» отслеживает внешнюю ветку «main» из «origin».`
+
